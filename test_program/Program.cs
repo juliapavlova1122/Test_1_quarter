@@ -17,12 +17,10 @@ void PrintArray(string[] array)
 
     for (int i = 0; i < count; i++)
     {
-        for (int size = array[i].Length; size <=3;)        
-        {
-        Console.Write($"{array[i]}");
-        Console.WriteLine();
-        break;
-        }
+        int size = array[i].Length; 
+        if (size <= 3)      
+        Console.WriteLine($"{array[i]}");
+             
     }
 }
 PrintArray(array);
